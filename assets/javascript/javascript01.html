@@ -39,22 +39,23 @@
         <div class="container">
             <div class="main__menu">
                 <ul>
-                    <li><a href="#">00. 변수 : 데이터 저장</a></li>
-                    <li><a href="#">00. 변수 : 데이터 저장 + 데이터 변경</a></li>
-                    <li><a href="#">00. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
-                    <li><a href="#">00. 상수 : 데이터 저장 + 데이터 변경(X)</a></li>
-                    <li><a href="#">00. 배열 : 데이터 저장(여러개) : 표현방법1</a></li>
-                    <li><a href="#">00. 배열 : 데이터 저장(여러개) : 표현방법2</a></li>
-                    <li><a href="#">00. 배열 : 데이터 저장(여러개) : 표현방법3</a></li>
-                    <li><a href="#">00. 배열 : 데이터 저장(여러개) : 표현방법4</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법1</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법2</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법3</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법4</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법5</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법6</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법7</a></li>
-                    <li><a href="#">00. 객체 : 데이터 저장(키와 값) : 표현방법8</a></li>
+                    <li><a href="#">01. 변수 : 데이터 저장</a></li>
+                    <li><a href="#">02. 변수 : 데이터 저장 + 데이터 변경</a></li>
+                    <li><a href="#">03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
+                    <li><a href="#">04. 상수 : 데이터 저장 + 데이터 변경(X)</a></li>
+                    <li><a href="#">05. 상수 + 변수 : 데이터 저장 + 데이터 변경 + 데이터 연산</a></li>
+                    <li><a href="#">06. 배열 : 데이터 저장(여러개) : 표현방법1</a></li>
+                    <li><a href="#">07. 배열 : 데이터 저장(여러개) : 표현방법2</a></li>
+                    <li><a href="#">08. 배열 : 데이터 저장(여러개) : 표현방법3</a></li>
+                    <li><a href="#">09. 배열 : 데이터 저장(여러개) : 표현방법4</a></li>
+                    <li><a href="#">10. 객체 : 데이터 저장(키와 값) : 표현방법1</a></li>
+                    <li><a href="#">11. 객체 : 데이터 저장(키와 값) : 표현방법2</a></li>
+                    <li><a href="#">12. 객체 : 데이터 저장(키와 값) : 표현방법3</a></li>
+                    <li><a href="#">13. 객체 : 데이터 저장(키와 값) : 표현방법4</a></li>
+                    <li><a href="#">14. 객체 : 데이터 저장(키와 값) : 표현방법5</a></li>
+                    <li><a href="#">15. 객체 : 데이터 저장(키와 값) : 표현방법6</a></li>
+                    <li><a href="#">16. 객체 : 데이터 저장(키와 값) : 표현방법7</a></li>
+                    <li><a href="#">17. 객체 : 데이터 저장(키와 값) : 표현방법8</a></li>
                 </ul>
                 
                 <div class="main__sample">
@@ -160,28 +161,30 @@
                     </div>
                     <!-- //sample04 -->
                     <div id="sample5" class="sample">
-                        <h3>05. 상수 : 데이터 저장 + 데이터 변경(X)</h3>
-                        <p>상수는 데이터 저장은 가능하나 변경은 불가능합니다.
-                            변수는 데이터 저장도 가능하고 연산도 가능합니다.</p>
+                        <h3>05. 상수 + 변수 : 데이터 저장 + 데이터 변경 + 데이터 연산</h3>
+                        <p>
+                            상수를 선언하여 데이터를 선언하고. 상수로 데이터 연산을 시작합니다.
+                            변수 c를 선언하여 데이터를 변경 합니다.
+                        </p>
 <pre><code>{
     const a = 10000;
     const b = 20000;
     
-    console.log(a);     // 10000
-    console.log(b);     // 20000
+    console.log(a);     
+    console.log(b);     
     
     // 연산자
-    console.log(a+b);   // 30000
-    console.log(a-b);   // -10000
-    console.log(a*b);   // 200000000
-    console.log(a/b);   // 0.5
-    console.log(a%b);   // 10000
+    console.log(a+b);   
+    console.log(a-b);   
+    console.log(a*b);   
+    console.log(a/b);   
+    console.log(a%b);   
     
     let c = 10;
     c = "100";
     c = 1000;
     c += 1000;
-    console.log(c);     // 2000
+    console.log(c);    
 }
 </code></pre>                        
                     </div>
@@ -196,18 +199,149 @@
                     </div>
                     <!-- //sample05 -->
                     <div id="sample6" class="sample">
-                        <h3>06. 상수 : 데이터 저장 + 데이터 변경(X)</h3>
-                        <p>상수는 데이터 저장은 가능하나 변경은 불가능합니다.
-                            변수는 데이터 저장도 가능하고 연산도 가능합니다.</p>
-                        <pre><code>
+                        <h3>06. 배열 : 데이터 저장(여러개) : 표현방법1</h3>
+                        <p>배열을 new로 선언하여 배열 인덱스에 저장 후 호출 중입니다.</p>
+<pre><code>{
+    const arr = new Array();
+    arr[0] = 100;
+    arr[1] = 200;
+    arr[2] = "javascript";
 
-                        </code></pre>
+    console.log(arr[0]);
+    console.log(arr[1]); 
+    console.log(arr[2]); 
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        100<br>
+                        200 <br>
+                        javascript <br>
                     </div>
                     <!-- //sample06 -->
-                    <div id="sample7" class="sample"></div>
-                    <div id="sample8" class="sample"></div>
-                    <div id="sample9" class="sample"></div>
-                    <div id="sample10" class="sample"></div>
+                    <div id="sample7" class="sample">
+                        <h3>07. 배열 : 데이터 저장(여러개) : 표현방법2</h3>
+                        <p>배열을 new로 선언하여 데이터를 저장하여 호출 중입니다.</p>
+<pre><code>{
+    const arr = new Array(100, 200, "javascript");
+
+    console.log(arr[0]); 
+    console.log(arr[1]);
+    console.log(arr[2]); 
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        100<br>
+                        200 <br>
+                        javascript <br>
+                    </div>
+                    <!-- //sample07 -->
+                    <div id="sample8" class="sample">
+                        <h3>08. 배열 : 데이터 저장(여러개) : 표현방법3</h3>
+                        <p>배열을 []로 생성하여 배열 인덱스에 데이터를 저장 후 호출 중입니다.</p>
+<pre><code>{
+    const arr = [];
+    arr[0] = 100;
+    arr[1] = 200;
+    arr[2] = "javascript";
+
+    console.log(arr[0]); 
+    console.log(arr[1]); 
+    console.log(arr[2]);
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        100<br>
+                        200 <br>
+                        javascript <br>
+                    </div>
+                    <!-- //sample08 -->
+                    <div id="sample9" class="sample">
+                        <h3>09. 배열 : 데이터 저장(여러개) : 표현방법4</h3>
+                        <p>배열을 []로 생성하여 데이터를 저장 후 호출 중입니다.</p>
+
+<pre><code>{
+    const arr = [100, 200, "javascript"];
+
+    console.log(arr[0]); 
+    console.log(arr[1]); 
+    console.log(arr[2]);
+}
+</code></pre>
+                    </div>
+                    <div class="result">
+                        100<br>
+                        200 <br>
+                        javascript <br>
+                    </div>
+                    <!-- //sample09 -->
+                    <div id="sample10" class="sample">
+                        <h3>10. 객체 : 데이터 저장(키와 값) : 표현방법1</h3>
+                        <p>객체를 new로 생성 후 객체 인덱스 번호에 저장하여 데이터를 호출 중입니다.</p>
+<pre><code>{
+    const obj = new Object();
+    obj[0] = 100;
+    obj[1] = 200;
+    obj[2] = "javascript";
+
+    console.log(obj[0]); 
+    console.log(obj[1]); 
+    console.log(obj[2]); 
+}
+                        </code></pre>
+                        <div class="result">
+                            100<br>
+                            200 <br>
+                            javascript <br>
+                        </div>
+                    </div>
+                    <!-- //sample10 -->
+                    <div id="sample11" class="sample">
+                        <h3>11. 객체 : 데이터 저장(키와 값) : 표현방법2</h3>
+                        <p>객체를 new로 생성 후 명칭을 할당하여 데이터를 저장하여 호출 중입니다.</p>
+<pre><code>{
+    const obj = new Object();
+    obj.a = 100;
+    obj.b = 200;
+    obj.c = "javascript";
+
+    console.log(obj.a); 
+    console.log(obj.b); 
+    console.log(obj.c); 
+}
+</code></pre>
+                        <div class="result">
+                            100<br>
+                            200 <br>
+                            javascript <br>
+                        </div>
+                    </div>
+                    <!-- //sample11 -->
+                    <div id="sample12" class="sample">
+                        <h3>12. 객체 : 데이터 저장(키와 값) : 표현방법3</h3>
+                        <p>객체를 {}로 생성하여 데이터를 저장 후 데이터를 호출 중입니다.</p>
+<pre><code>{
+    const x = 100;
+    const obj = {a:100, b:200, c:"javascript"};
+
+    console.log(obj.a); 
+    console.log(obj.b); 
+    console.log(obj.c); 
+}
+</code></pre>
+                        <div class="result">
+                            100<br>
+                            200 <br>
+                            javascript <br>
+                        </div>
+                    </div>
+                    <!-- //sample12 -->
+
+                    
+       
+    
                 </div>
             </div>
         </div>      
@@ -359,19 +493,7 @@
             // console.log(obj.b); // 200
             // console.log(obj.c); // javascript
         }
-        // 11. 객체 : 데이터 저장(키와 값) : 표현방법3
-        {
-          const obj = {};
-          
-          obj.a = 100;
-          obj.b = 200;
-          obj.c = "javascript";
-          
-        //   console.log(obj.a); // 100
-        //   console.log(obj.b); // 200
-        //   console.log(obj.c); // javascript
-        }
-        // 12. 객체 : 데이터 저장(키와 값) : 표현방법4
+        // 12. 객체 : 데이터 저장(키와 값) : 표현방법3
         {
             const x = 100;
             const obj = {a:100, b:200, c:"javascript"};
