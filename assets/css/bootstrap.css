@@ -5906,3 +5906,36 @@ td.visible-print {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+
+
+/* 2월18일 table 학원 숙제 */
+.work-top {
+  padding-top: 30px;
+  border-top: 2px dashed #000;
+}
+.work-left {
+  width: 49.5%;
+  float: left;
+  margin-right: 0.5%;
+}
+.work-left p {
+  font-size: 13px;
+}
+.work-right {
+  width: 50%;
+  float: left;
+}
+.work-right .tstyle td {
+  height: 60px;
+}
+.work-bottom {
+  text-align: center;
+  font-weight: bold;
+}
+.work-bottom strong {
+  display: inline-block;
+  transform: translateY(-13px);
+  font-size: 15px;
+  color: red;
+}
