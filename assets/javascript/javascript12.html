@@ -60,15 +60,12 @@
                 <div id="sample1" class="sample">
                     <h3>01. 데이터 이펙트 : 1부터 100까지 출력하기</h3>
                     <p>for문을 이용해서 1-100까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js">{
-    for(let i=1; i&lt;=100; i++) { //반복문 for문
-        console.log(i);   //초기값을 1로 설정하고 1씩 증가시켜서 100번 반복 함.
-    }
-
+<pre class="line-numbers"><code class="language-js">for(let i=1; i&lt;=100; i++) { //반복문 for문
+    console.log(i);   //초기값을 1로 설정하고 1씩 증가시켜서 100번 반복 함.
 }
+
 //증감 연산자를 이용
 //i=i+1과 같음(1씩 증가)
-
 //결과값 : 1,2,3,4,5,6 ~ 100
 </code></pre>
                 </div>
@@ -78,10 +75,10 @@
                 <div id="sample2" class="sample">
                     <h3>02. 데이터 이팩트 : 0부터 50까지 출력하기</h3>
                     <p>for문을 이용해서 0-50까지 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js">{
-for(let i=0; i&lt;50; i++) { //반복문 for문
+<pre class="line-numbers"><code class="language-js">for(let i=0; i&lt;50; i++) { //반복문 for문
     console.log(i); //초기값을 0을 설정하고 1씩 증가시켜서 50번 반복 함.
 }
+
 //증감 연산자를 이용
 //i=i+1과 같음(1씩 증가)
 //결과값 : 0,1,2,3,4,5,6,7,8 ~ 50
@@ -93,11 +90,10 @@ for(let i=0; i&lt;50; i++) { //반복문 for문
                 <div id="sample3" class="sample">
                     <h3>03. 데이터 이팩트 : 0부터 100까지 짝수만 출력하기</h3>
                     <p>for문을 이용해서 0-100까지의 짝수를 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js">{
-    for(let i=0; i&lt;100; i+=2) { //반복문 for문
-        console.log(i); //값을 0부터 100까지 설정하고. 그 중에서 짝수만 출력 하는 중
-    }
+<pre class="line-numbers"><code class="language-js">for(let i=0; i&lt;100; i+=2) { //반복문 for문
+    console.log(i); //값을 0부터 100까지 설정하고. 그 중에서 짝수만 출력 하는 중
 }
+
 //증감 연산자를 이용
 //i=i+2과 같음(2씩 증가)
 //결과값 : 0,2,4,6,8,10 ~ 100
@@ -109,8 +105,7 @@ for(let i=0; i&lt;50; i++) { //반복문 for문
                 <div id="sample4" class="sample">
                     <h3>04. 데이터 이팩트 : 1부터 100까지 5의 배수만 출력하기</h3>
                     <p>for문을 이용해서 1-100까지 5의 배수만 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js">{
-// 증감 연산자를 이용한 방법
+<pre class="line-numbers"><code class="language-js">// 증감 연산자를 이용한 방법
 for(let i=0; i&lt;=100; i+=5){
     console.log(i)
 }
@@ -122,34 +117,14 @@ for(let i=1; i&lt;100; i++){
     }
 }
 
-// 결과값 : 2,4,6,8 ~~~50
-
-//곱셈 연산자를 이용
-//i=i*5과 같음(5씩 증가)
+//for문과 if문을 이용
+//i=i+5과 같음(5씩 증가)
 //결과값 : 5,10,15,20,25,30 ~ 100
-
 </code></pre>
                 </div>
                 <!-- //#sample4 -->
 
-                <!-- #sample5는 sample4와 병합해야 함.-->
-                <!-- <div id="sample5" class="sample">
-                    <h3>05. 데이터 이팩트 : if문 </h3>
-                    <p>for문을 이용해서 1-100까지 중에서 if문을 통해서 5의 배수만 출력하는 예제입니다.</p>
-<pre class="line-numbers"><code class="language-js">{
-    for(let i=1; i&lt;100; i++) { //반복문 for안에 조건문 if문
-        if(i % 5 === 0) {
-            console.log(i); //값을 1부터 100까지 주고. 그 중에서 5의 배수일때만 화면에 출력 함.
-        }
-    }
-}
-//증감 연산자를 이용
-//i=i+1과 같음(1씩 증가)
-//결과값 : 5,10,15,20,25,30 ~ 95 -->
-</code></pre>
-                </div>
-                <!-- //#sample5 -->
-
+                
             </div>  
              <!-- //.main__menu  -->
         </div>       
