@@ -83,6 +83,7 @@ a {
 /* 메인 영역 */
 #main {
     padding: 40px 0;
+    border-bottom: 1px dashed #dcdcdc;
 }
 .main__menu {
     padding-bottom: 40px;
