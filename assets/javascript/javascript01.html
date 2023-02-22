@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript : 데이터 저장하기</title>
     
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="../css/default.min.css">
+
+    <!-- 파비콘 -->
     <link rel="shortcut icon" href="../ico/javascript.ico">
     <link rel="icon" type="image/png" sizes="192x192"  href="../ico/javascript192x192.png">
 </head>
@@ -93,6 +96,7 @@
                         </div>
                     </div>
                     <!-- //sample01 -->
+                    
                     <div id="sample2" class="sample">
                         <h3>02. 변수 : 데이터 저장 + 데이터 변경</h3>
                         <p>데이터를 저장 후 다른 값으로 변경합니다.</p>
@@ -520,7 +524,36 @@
     <script src="../js/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script>
-        // 객체 : 
+        // (내용 추가) 16. 객체 : 데이터 저장(키와 값) : 표현방법7
+        {
+            const j = "javascript";
+
+            const obj = {
+                a: 100,
+                b: [200, 300],
+                c: "javascript",
+                d: function(){
+                    console.log("javascript가 실행되었습니다.");
+                },
+                e: function() {
+                    console.log(obj.c + "가 실행되었습니다.");
+                },
+                f: function() {
+                    // this : 자기 자신
+                    console.log(this.c + "가 실행되었습니다.");
+                }
+            }
+
+            console.log(obj.a);
+            console.log(obj.b[0]);
+            console.log(obj.b[1]);
+            // console.log(obj.b[2]);  //undefind
+            console.log(obj.c);
+            // console.log(obj.d);     //(X)
+            obj.d();
+            obj.e();
+            obj.f();
+        }   
     </script>
 </body>
 </html>
