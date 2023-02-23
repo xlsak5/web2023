@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1,2,3,4,5,6,7,8,9,10];
+
+        document.write(arr[4] + "<br>");
+        document.write(arr[6], arr[7] + "<br>");
+        document.write(arr[1] + arr[9] + "<br>");
+        document.write(arr[8] * arr[9] + "<br>");
+
+        for(let i=0; i<8; i++){
+            document.write(arr[i]);
+        }
+        document.write("<br>");
+
+        for(let j=0; j<9; j++){
+            if(j%2 === 0){
+                document.write(j);
+            }
+        }
+        document.write("<br>");
+
+        // 4의 배수
+        for(let q=1; q<=100; q++){
+            if(q%4 === 0){
+                document.write("배수 : " + q + " ");
+            }
+        }
+        
+
+        document.write("<br>");
+        // 8단
+        for(let a=1; a<8; a++){
+            document.write(a+"단"+"<br>");
+
+            for(let aa=1; aa<=9; aa++){
+                document.write(a + "*" + aa + "=" + a*aa);
+                document.write("<br>"); 
+            }        
+        }
+
+        // 테이블
+        let table = "<table border='1'>";
+
+            for(let z=1; z<=15; z++){
+                table += "<tr>"
+
+                for(let zz=1; zz<=15; zz++){
+                    table += "<td>" + zz;
+                    table += "</td>";
+                }
+                table += "</tr>"
+            }
+            table += "</table">
+            document.write(table);
+    </script>    
+</body>
+</html>

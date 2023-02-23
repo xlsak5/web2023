@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            color: #fff;
+        }
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: block;
+            line-height: 0;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #left {
+            width: 30%;
+            float: left;
+        }
+        #left #logo1{
+            width: 100%;
+            height: 300px;
+            background-color: blue;
+        }
+        #left #logo2{
+            width: 100%;
+            height: 300px;
+            background-color: #000;
+        }
+        #left #logo3{
+            width: 100%;
+            height: 600px;
+            background-color: yellow;
+        }
+
+        #right {
+            width: 70%;
+            float: left;
+        }
+        #right #main{
+            width:100%;
+            height: 600px;
+            background-color: #555;
+        }
+        #right #article {}
+        #right #article #articlea1 {
+            width: 33.33%;
+            height:300px;
+            background-color: #777;
+            float: left;
+        }
+        #right #article #articlea2 {
+            width: 33.33%;
+            height:300px;
+            background-color: #333;
+            float: left;
+
+        }
+        #right #article #articlea3 {
+            width: 33.33%;
+            height:300px;
+            background-color: red;
+            float: left;
+
+        }
+        #right #footer {}
+        #right #footer #f1 {
+            width: 30%;
+            height: 300px;
+            background-color: blue;
+            float: left;
+        }
+        #right #footer #f2 {
+            width: 70%;
+            height: 150px;
+            background-color: rgb(32, 32, 59);
+            float: left;
+        }
+        #right #footer #f3 {
+            width: 70%;
+            height: 150px;
+            background-color: rgb(36, 120, 153);
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="clearfix">
+        <div id="left">
+            <div id="logo1">로고</div>
+            <div id="logo2"></div>
+            <div id="logo3"></div>
+        </div>
+        <div id="right">
+            <div id="main"> 이미지 슬라이드</div>
+            <div id="article" class="clearfix">
+                <div id="articlea1">공지사항</div>
+                <div id="articlea2">갤러리</div>
+                <div id="articlea3">팝업</div>
+            </div>
+            <div id="footer" class="clearfix">
+                <div id="f1">로고</div>
+                <div id="f2">하단메뉴</div>
+                <div id="f3">copyright</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
